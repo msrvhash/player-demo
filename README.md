@@ -1,16 +1,10 @@
-# playerdb-VASUDHAMODA
 
 create a microservice which serves the contents of the `People.csv` through a
-REST API. You are free to choose whatever programming language you are comfortable with, SDKs, web
-frameworks, databases, and online resources to complete this exercise.
+REST API.
 
-## Requirements:
-* Provide a REST API to your service
-* Provide a working Dockerfile for your service
+* REST API, a working Dockerfile for your service
 
-## REST API
-
-The service should expose two REST endpoints:
+The service exposes two REST endpoints:
 * `GET /api/players` - returns the list of all players
 * `GET /api/players/{playerID}` - returns a single player by it's ID
 
@@ -37,11 +31,6 @@ The json representation of a player should be the following, where each field na
     ...
 }
 ```
-
-## Additional Requirements:
-
 The service should expose two additional REST API endpoint:
 * `PUT /api/players/{playerID}/weight` - increments a player's weight by 1
 * `PUT /api/players/{playerID}/height` - increments a player's height by 1
-
-The request and response payloads of these endpoints can be an empty JSON dictionary: `{}`
